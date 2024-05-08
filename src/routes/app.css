@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Metropolis;
+    font-weight: 400;
+    src: url("../lib/assets/fonts/Metropolis-Regular.otf");
+  }
+
+  @font-face {
+    font-family: Metropolis;
+    font-weight: 700;
+    src: url("../lib/assets/fonts/Metropolis-Bold.otf");
+  }
+
+  @font-face {
+    font-family: Metropolis;
+    font-weight: 800;
+    src: url("../lib/assets/fonts/Metropolis-Black.otf");
+  }
+
+  html,
+  body {
+    @apply w-full h-screen bg-gradient-primary bg-no-repeat bg-contain bg-center;
+    @apply text-white;
+  }
+
+  span {
+    @apply text-white;
+  }
+}
+
+@layer components {
+  .btn-flat {
+    @apply px-10 py-5;
+  }
+}
